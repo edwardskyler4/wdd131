@@ -1,4 +1,4 @@
-body {
+#content {
     max-width: 500px;
     margin: 50px auto;
 }
@@ -26,4 +26,15 @@ img {
 }
 li {
     margin-bottom: 1.5em;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+.light-mode {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
 }

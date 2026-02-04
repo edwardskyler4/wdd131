@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Pics</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="cool-style.css">
-</head>
-<body>
-    <header>
-        <h1>Cool Pics📷</h1>
-        <button id="menu-btn">Menu</button>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Profile</a>
-            <a href="#">Places</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kyler Edwards">
+        <meta name="description" content="A site displaying cool pictures, meant to demonstrate skills in dynamic web programming using JS.">
+        <title>Cool Pics</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="cool-style.css">
+        <script defer src="coolpics.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cool Pics📷</h1>
+            <button id="menu-btn">Menu</button>
+            <nav class="hide">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Places</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
 
-    <main>
-        <h2>Current Work</h2>
-        <section id="photo-gallery">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-            <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
-        </section>
-    </main>
+        <main>
+            <h2>Current Work</h2>
+            <section id="photo-gallery">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+                <img class="photo" src="images/norris-sm.jpg" alt="Hot springs">
+            </section>
+            
+            <dialog>
+                <img>
+                <button class="close-viewer">X</button>
+            </dialog>
+        </main>
 
-    <footer>
-        @2026 Not a real site
-    </footer>
-</body>
+        <footer>
+            @2026 Not a real site
+        </footer>
+    </body>
 </html>

@@ -1,0 +1,120 @@
+:root {
+    --main-red: #D0312D;
+}
+body {
+    margin: 0;
+    padding: 5px;
+    object-fit: cover;
+}
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+nav {
+    border-top: 1px solid var(--main-red);
+    border-bottom: 1px solid var(--main-red);
+}
+.menu-btns {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: right;
+    justify-items: center;
+    margin: 0;
+}
+nav a {   
+    color: var(--main-red);
+    text-decoration: none;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-top: 1px solid var(--main-red);
+    border-bottom: 1px solid var(--main-red);
+    margin: 50px 0;
+    padding: 10px;
+}
+.meta-col {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.blog-meta-col {
+    margin: 6px 0;
+    justify-items: right;
+    text-align: right;
+}
+.date{
+    grid-row: 1/2;
+}
+.number {
+    grid-row: 2/3;
+}
+.genre {
+    grid-row: 3/4;
+}
+.rating {
+    grid-row: 4/5;
+}
+.book-title {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    color: var(--main-red);
+    font-size: 1.8em;
+    margin: 18px 0;
+}
+.book-cover {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    justify-self: center;
+}
+.description {
+    margin: 18px 0;
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+
+footer {
+    padding: 14px;
+    text-align: center;
+    border-top: 1px solid var(--main-red)
+}
+
+
+@media screen and (min-width:700px) {
+    .book {
+        grid-template-columns: 1fr 4fr;
+        border-top: none;
+        border-bottom: none;
+        max-width: 50%;
+        margin: 25px auto;
+    }
+    .meta-col {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        grid-template-rows: repeat(12, 1fr);
+        border-right: 1px solid var(--main-red);
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    .book-title {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-top: 0;
+    }
+    .book-cover {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .description {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}

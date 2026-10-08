@@ -22,3 +22,14 @@ function addIndex() {
 
 addIndex()
 displayWelcome()
+
+
+const menuBtn = document.querySelector(".menu-btn")
+const navEl = document.querySelector(".main-nav")
+
+function toggleMenu() {
+    navEl.classList.toggle("hide")
+    menuBtn.classList.toggle("change")
+}
+
+menuBtn.addEventListener("click", toggleMenu)

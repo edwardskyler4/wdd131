@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header {
     width: 100%;
@@ -22,22 +22,31 @@ footer {
 }
 
 /* Header elements */
+h1{
+    font-size: 2.5em;
+}
 #menu {
     margin: 0;
-    font-size: large;
+    font-size: 2em;
 }
-#nav {
-    display: none;
-}
-#nav > ul {
+.nav > ul {
     list-style: none;
+    padding: 0;
 }
-#nav > ul > li > a {
-    text-decoration: none;
+.nav > ul > li {
+    margin: 0.5em auto;
+}
+.nav > ul > li > a {
     color: white;
+}
+.hide{
+    display: none;
 }
 
 /* Main elements */
+h2{
+    font-size: 1.75em;
+}
 main > section {
     display: grid;
     width: fit-content;
@@ -54,6 +63,24 @@ main > section {
     box-shadow: 5px 5px 10px black;
 }
 
+/* modal */
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer{
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
 
 
 
@@ -69,18 +96,29 @@ main > section {
 #menu {
     display: none;
 }
-#nav {
+.nav {
     display: block;
 }
-#nav > ul {
+.nav > ul {
     display: flex;
     max-width: 40%;
     margin: 0 auto;
     justify-content: space-around;
     font-size: large;
 }
+.nav a{
+    text-decoration: none;
+}
 
 main > section {
     grid-template-columns: 1fr 1fr 1fr;
+}
+dialog img{
+    width: 60%;
+    margin: 15vh auto;
+}
+.close-viewer{
+    position: absolute;
+    right: 15vh;
 }
 }

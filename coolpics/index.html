@@ -6,12 +6,13 @@
     <title>Cool Pics</title>
     <meta name="description" content="A page for super cool pictures">
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Cool Pics📷</h1>
         <p id="menu">Menu</p>
-        <nav id="nav">
+        <nav class="nav hide">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">People</a></li>
@@ -24,7 +25,7 @@
 
     <main>
         <h2>Current Work</h2>
-        <section>
+        <section class="gallery">
             <div class="photo-div"><img src="images/norris-sm.jpg" alt="Hot springs bubbling"></div>
             <div class="photo-div"><img src="images/norris-sm.jpg" alt="Hot springs bubbling"></div>
             <div class="photo-div"><img src="images/norris-sm.jpg" alt="Hot springs bubbling"></div>
@@ -35,6 +36,10 @@
             <div class="photo-div"><img src="images/norris-sm.jpg" alt="Hot springs bubbling"></div>
             <div class="photo-div"><img src="images/norris-sm.jpg" alt="Hot springs bubbling"></div>
         </section>
+        <dialog>
+            <img>
+            <button class="close-viewer">X</button>
+        </dialog>
     </main>
 
     <footer>

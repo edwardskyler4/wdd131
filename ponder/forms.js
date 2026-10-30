@@ -5,7 +5,7 @@ const notes = document.querySelector("#notes");
 const output = document.querySelector("#output");
 const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
-function updateNotesField() {
+function updateHiddenFields() {
   const value = travelRange.value;
   if (value === "many") {
     notesContainer.hidden = false;
@@ -15,8 +15,8 @@ function updateNotesField() {
   }
 }
 
-travelRange.addEventListener("change", updateNotesField);
-updateNotesField();
+travelRange.addEventListener("change", updateHiddenFields);
+updateHiddenFields();
 
 
 // Ensure they choose a date later than the current date
@@ -82,6 +82,6 @@ form.addEventListener("submit", function (event) {
   `;
 
   form.reset();
-  updateNotesField();
+  updateHiddenFields();
 });
           

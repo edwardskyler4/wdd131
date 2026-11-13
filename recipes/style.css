@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/* General */
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 95%;
+}
+h1, h2 {
+    font-family: 'Amatic SC', sans-serif;
+}
+p {
+    font-family: sans-serif;
+}
+
+/* Logo area */
+#logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+#header-logo {
+    max-height: 8em;
+}
+#logo-section h1 {
+    font-size: 4em;
+}
+
+/* Search bar */
+#search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+}
+#search p {
+    color: #393939;
+}
+#search-icon {
+    max-height: 100%;
+    border-left: 1.5px solid black;
+    padding-left: 5px;
+}
+
+/* Separating line */
+header hr {
+    margin: 20px 0;
+}
+
+
+/* Recipe Card */
+.recipe-card {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.recipe-img {
+    width: 100%;
+}
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tag-section {
+    display: flex;
+    gap: 20px;
+}
+.tag {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: lightgray;
+    max-width: fit-content;
+}
+.recipe-card h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #0ba0c2;
+    font-size: 2.5em;
+}
+.rating {
+    .icon-star {
+        font-size: 1.25em;
+    }
+}
+.description {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px;
+}
+.icon-sm {
+    width: 2em;
+}
+
+
+
+/* Larger screen */
+@media (min-width: 756px) {
+    .recipe-card {
+        flex-flow: row nowrap;
+        gap: 20px;
+    }
+    .recipe-img {
+        width: 45%;
+    }
+    .description {
+        display: inline;
+        max-width: fit-content;
+        overflow-wrap: normal;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
